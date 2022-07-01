@@ -124,10 +124,6 @@ function reset() {
         promptValue = Number(prompt("Enter your first number"));
         promptValue1 = Number(prompt("Enter your second number"));
     }
-    else {
-        promptValue = 0;
-        promptValue1 = 20;
-    }
     document.querySelector(".between").textContent = `(Between ${promptValue} and ${promptValue1})`;
     document.querySelector('.score').textContent = promptValue1 - promptValue;
     score = promptValue1 - promptValue;

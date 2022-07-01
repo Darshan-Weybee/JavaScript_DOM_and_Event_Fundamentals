@@ -83,3 +83,25 @@ p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+.description{
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1em;
+  padding-left: 3em;
+  /* height: 15%; */
+  /* width: fit-content; */
+  
+}
+.description .innerDescription{
+  list-style-type: disc;
+
+}
+.description .innerDescription li{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1em 0;
+}
