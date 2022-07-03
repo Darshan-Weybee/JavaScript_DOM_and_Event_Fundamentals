@@ -8,10 +8,15 @@
     <title>Pig Game</title>
   </head>
   <body>
-    <input type="range" min="-10"  max="10"  value="0" class="slider">
+    <div class = "playerName">
+      <h1 class="playerName-0">Player 1</h1>
+      <h1 class="playerName-1">Player 2</h1>
+    </div>
+    <div class="sliderParent"><input type="range" min="-10"  max="10"  value="0" class="slider"></div>
     <main>
       <section class="player player--0 player--active">
-        <h2 class="name" id="name--0">Player 1</h2>
+        <h2 class="name name-0" id="name--0">Player 1</h2>
+        <input type="text" class="newName changeName-0 hidden" placeholder = "Player 1">
         <p class="score" id="score--0">0</p>
         <div class="current">
           <p class="current-label">Current</p>
@@ -19,7 +24,8 @@
         </div>
       </section>
       <section class="player player--1">
-        <h2 class="name" id="name--1">Player 2</h2>
+        <h2 class="name name-1" id="name--1">Player 2</h2>
+        <input type="text" class="newName changeName-1 hidden" placeholder = "Player 2">
         <p class="score" id="score--1">0</p>
         <div class="current">
           <p class="current-label">Current</p>
