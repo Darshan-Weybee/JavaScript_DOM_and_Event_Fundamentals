@@ -21,8 +21,11 @@ let presentPlayerScore, anotherPlayerScore;
 score0El.textContent = 0;
 score1El.textContent = 0;
 diceEl.classList.add("hidden");
+btnNew.classList.add("hidden");
+document.querySelector(".slider").disabled = true;
 
 btnRoll.addEventListener("click", function () {
+    btnNew.classList.remove("hidden");
     if (playing) {
         const dice = Math.trunc(Math.random() * 6) + 1;
         // console.log(dice);
@@ -126,7 +129,7 @@ btnNew.addEventListener("click", function () {
     console.log(a);
 
     if(winner == winnerName) {
-        changeLimit();
+
         document.querySelector(".slider").value = 0;
         playing = true;
         scores = [0, 0];
@@ -141,6 +144,7 @@ btnNew.addEventListener("click", function () {
         score1El.textContent = 0;
         current0El.textContent = 0;
         current1El.textContent = 0;
+        btnNew.classList.add("hidden")
     }
 });
 
